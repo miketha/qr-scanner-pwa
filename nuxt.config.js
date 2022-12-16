@@ -45,6 +45,10 @@ export default {
   ],
 
   pwa: {
+    meta: {
+      title: 'SA PWA',
+      author: 'Blu-Tang-Hackaclan',
+    },
     manifest: {
       name: 'qr-scanner-pwa',
       short_name: 'qr-scan',
