@@ -17,11 +17,12 @@
     <StreamBarcodeReader @decode="onDecode" @loaded="onLoaded"></StreamBarcodeReader>
 
     <div class="flex space-x-2 justify-center">
+      <a v-if="url !== ''" v-bind:href="`${url}`" target="_blank">
       <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light"
         class="inline-block px-6 py-2.5 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-600 active:shadow-lg transition duration-100 ease-in-out">
         Start Assessment
-        <a v-if="url !== ''" v-bind:href="`${url}`"></a>
       </button>
+    </a>
     </div>
   </span>
 </template>
@@ -39,9 +40,13 @@ const onLoaded = () => { }
 const onDecode = (text) => {
   decodedText.value = text
 
+  let hexSplit = text.split('x')
+  let parsedSetID = hexSplit[1]
+
   try {
-    if (text === 6 && new RegExp('^[0-9A-Fa-f]{6}$').test(text)) {
-      url.value = `https://senz-v2-prerelease-preview.lifebooster.ca/${text}`
+    if (parsedSetID.length === 6 && new RegExp('[0-9A-Fa-f]{6}$').test(parsedSetID)) {
+      url.value = `https://senz-v2-prerelease-preview.lifebooster.ca/start-assessment?setID=${parsedSetID}`
+      console.log(url)
       isValid.value = true
     } else {
       console.log('invalid set ID')
@@ -49,12 +54,10 @@ const onDecode = (text) => {
     }
   } catch (err) {
     console.log('Something went wrong')
+    isValid.value = false
   }
 }
 
-const clicked = () => {
-  console.log('button clicked')
-}
 </script>
 
 <style scoped>
