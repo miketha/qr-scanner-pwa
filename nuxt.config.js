@@ -43,6 +43,48 @@ export default {
   modules: [
   ],
 
+  pwa: {
+    meta: {
+      title: 'SA PWA',
+      author: 'Blu-Tang-Hackaclan',
+    },
+    manifest: {
+      name: 'qr-scanner-pwa',
+      short_name: 'qr-scan',
+      lang: 'en',
+      display: 'standalone',
+      useWebmanifestExtension: false,
+    },
+    workbox: {
+      /* workbox options */
+      runtimeCaching: [
+        {
+          urlPattern: 'https://fonts.googleapis.com/.*',
+          handler: 'cacheFirst',
+          method: 'GET',
+          strategyOptions: { cacheableResponse: { statuses: [0, 200] } }
+        },
+        {
+          urlPattern: 'https://fonts.gstatic.com/.*',
+          handler: 'cacheFirst',
+          method: 'GET',
+          strategyOptions: { cacheableResponse: { statuses: [0, 200] } }
+        },
+        {
+          urlPattern: 'https://cdn.snipcart.com/.*',
+          method: 'GET',
+          strategyOptions: { cacheableResponse: { statuses: [0, 200] } }
+        },
+        {
+          urlPattern: 'https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js',
+          handler: 'cacheFirst',
+          method: 'GET',
+          strategyOptions: { cacheableResponse: { statuses: [0, 200] } }
+        }
+      ]
+    }
+  },
+
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     postcss: {

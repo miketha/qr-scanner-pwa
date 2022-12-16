@@ -1,5 +1,7 @@
 <template>
   <span>
+    <link rel="manifest" href="~/manifest.json">
+    <PWAPrompt />
 
     <img alt="Vue logo" src="../static/lb-logo-dark.png" />
   <div class="px-6 py-4">
@@ -22,5 +24,11 @@ export default {
 <style scoped>
 img {
   margin: 20px;
+}
+
+.add-button {
+  position: absolute;
+  top: 1px;
+  left: 1px;
 }
 </style>
