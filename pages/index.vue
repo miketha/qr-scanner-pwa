@@ -5,7 +5,7 @@
       <PWAPrompt />
     </head>
 
-    <div class="bg-[#F8F8F8] py-4">
+    <div class="bg-[#F2F2F2] py-4">
       <div class="px-6">
         <div class="font-['Maison Neue'] text-[24px] mb-2 font-bold">
           Device QR Code Scanner
@@ -29,7 +29,7 @@
       >
     </div>
 
-    <footer class="flex flex-col items-start bg-[#F8F8F8]">
+    <footer class="flex flex-col items-start bg-[#F2F2F2]">
       <img
         alt="LifeBooster Inc."
         src="../static/lb-logo-dark.png"
