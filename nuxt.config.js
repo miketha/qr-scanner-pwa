@@ -44,14 +44,14 @@ export default {
     '@nuxtjs/pwa',
   ],
 
-  manifest: {
-    name: 'qr-scanner-pwa',
-    short_name: 'qr-scan',
-    lang: 'en',
-    display: 'standalone',
-  },
-
   pwa: {
+    manifest: {
+      name: 'qr-scanner-pwa',
+      short_name: 'qr-scan',
+      lang: 'en',
+      display: 'standalone',
+      useWebmanifestExtension: false,
+    },
     workbox: {
       /* workbox options */
       runtimeCaching: [
