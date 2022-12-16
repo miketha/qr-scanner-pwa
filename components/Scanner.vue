@@ -20,7 +20,7 @@
       <a v-if="url !== ''" v-bind:href="`${url}`" target="_blank">
         <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light"
           class="inline-block px-6 py-2.5 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-600 active:shadow-lg transition duration-100 ease-in-out">
-          {{ `Start Assessment on set ${decodedText}` }}
+          {{ `Start Assessment with set ${decodedText}` }}
         </button>
       </a>
     </div>
