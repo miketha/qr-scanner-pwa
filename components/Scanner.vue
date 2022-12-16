@@ -39,8 +39,6 @@ const onLoaded = () => { }
 const onDecode = (text) => {
   decodedText.value = text
 
-  console.log(text)
-
   try {
     if (text === 6 && new RegExp('^[0-9A-Fa-f]{6}$').test(text)) {
       url.value = `https://senz-v2-prerelease-preview.lifebooster.ca/${text}`
