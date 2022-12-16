@@ -45,12 +45,15 @@ export default {
   ],
 
   pwa: {
+    meta: {
+      title: 'SA PWA',
+      author: 'Blu-Tang-Hackaclan',
+    },
     manifest: {
       name: 'qr-scanner-pwa',
       short_name: 'qr-scan',
       lang: 'en',
       display: 'standalone',
-      useWebmanifestExtension: false,
       icons: [
         {
           "src": "/icons/android-chrome-192x192.png",
