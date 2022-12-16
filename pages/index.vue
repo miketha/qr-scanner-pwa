@@ -1,6 +1,6 @@
 <template>
   <span>
-    <img alt="Vue logo" src="../../static/icon.png" />
+    <img alt="Vue logo" src="../static/icon.png" />
     <h1>Scan the set QR code to start a new assessment</h1>
 
     <Scanner/>

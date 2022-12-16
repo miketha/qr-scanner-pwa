@@ -1,5 +1,9 @@
 <template>
-  <StreamBarcodeReader @decode="onDecode" @loaded="onLoaded"></StreamBarcodeReader>
+  <span>
+    <StreamBarcodeReader @decode="onDecode" @loaded="onLoaded"></StreamBarcodeReader>
+  
+    <h2>{{ decodedText }}</h2>
+  </span>
 </template>
 
 <script setup>
