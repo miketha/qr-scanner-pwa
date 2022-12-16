@@ -30,10 +30,10 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: ["@nuxt/postcss8", "@nuxtjs/pwa"],
+  buildModules: ["@nuxt/postcss8"],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
+  modules: ["@nuxtjs/pwa"],
 
   pwa: {
     meta: {
@@ -41,8 +41,8 @@ export default {
       author: "Blu-Tang-Hackaclan",
     },
     manifest: {
-      name: "qr-scanner-pwa",
-      short_name: "qr-scan",
+      name: "LifeBooster Device QR Scanner",
+      short_name: "LB Device QR Scan",
       lang: "en",
       display: "standalone",
       icons: [
@@ -65,8 +65,8 @@ export default {
       ],
       start_url: "/",
       orientation: "portrait",
-      theme_color: "#B12A34",
-      background_color: "#B12A34",
+      theme_color: "#00727e",
+      background_color: "#00727e",
     },
     workbox: {
       /* workbox options */
