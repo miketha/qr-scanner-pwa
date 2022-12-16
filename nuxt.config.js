@@ -51,6 +51,28 @@ export default {
       lang: 'en',
       display: 'standalone',
       useWebmanifestExtension: false,
+      icons: [
+        {
+          "src": "/icons/android-chrome-192x192.png",
+          "sizes": "192x192",
+          "type": "image/png",
+          "purpose": "any maskable"
+        },
+        {
+          "src": "/icons/android-chrome-384x384.png",
+          "sizes": "384x384",
+          "type": "image/png"
+        },
+        {
+          "src": "/icons/icon-512x512.png",
+          "sizes": "512x512",
+          "type": "image/png"
+        }
+      ],
+      start_url: "/",
+      orientation: "portrait",
+      theme_color: "#B12A34",
+      background_color: "#B12A34"
     },
     workbox: {
       /* workbox options */
