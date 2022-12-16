@@ -6,7 +6,12 @@
     </head>
 
     <div class="bg-[#F2F2F2] py-4">
-      <div class="px-6">
+      <div class="flex flex-row items-center">
+        <img
+          alt="LifeBooster Inc."
+          src="../static/lb-logo.png"
+          class="h-[33px]"
+        />
         <div class="font-['Maison Neue'] text-[24px] mb-2 font-bold">
           Device QR Code Scanner
         </div>
