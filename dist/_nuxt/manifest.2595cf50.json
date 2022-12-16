@@ -1,6 +1,6 @@
 {
-  "name": "qr-scanner-pwa",
-  "short_name": "qr-scan",
+  "name": "LifeBooster Device QR Scanner",
+  "short_name": "LB Device QR Scan",
   "icons": [
     {
       "src": "/icons/android-chrome-192x192.png",
@@ -63,8 +63,8 @@
   ],
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#B12A34",
-  "theme_color": "#B12A34",
+  "background_color": "#00727e",
+  "theme_color": "#00727e",
   "lang": "en",
   "orientation": "portrait"
 }
