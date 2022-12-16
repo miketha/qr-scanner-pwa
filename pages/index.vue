@@ -1,5 +1,5 @@
 <template>
-  <span>
+  <div class="flex flex-col">
     <head>
       <link rel="manifest" href="~/manifest.json" />
       <PWAPrompt />
@@ -34,7 +34,9 @@
       >
     </div>
 
-    <footer class="flex flex-col items-start bg-[#F2F2F2]">
+    <footer
+      class="flex flex-col items-start fixed bottom-0 w-full bg-[#F2F2F2]"
+    >
       <img
         alt="LifeBooster Inc."
         src="../static/lb-logo-dark.png"
@@ -44,7 +46,7 @@
         {{ `© LifeBooster ${new Date().getFullYear()}. All rights reserved.` }}
       </div>
     </footer>
-  </span>
+  </div>
 </template>
 
 <script>
