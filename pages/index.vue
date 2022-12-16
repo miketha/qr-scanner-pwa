@@ -5,14 +5,14 @@
       <PWAPrompt />
     </head>
 
-    <div class="bg-[#F2F2F2] py-4">
+    <div class="bg-[#F2F2F2]">
       <div class="flex flex-row items-center">
         <img
           alt="LifeBooster Inc."
           src="../static/lb-logo.png"
-          class="h-[33px]"
+          class="h-[30px]"
         />
-        <div class="font-['Maison Neue'] text-[24px] mb-2 font-bold">
+        <div class="font-['Maison Neue'] text-[24px] font-bold">
           Device QR Code Scanner
         </div>
       </div>
@@ -27,7 +27,7 @@
       </div>
     </div>
 
-    <div class="flex px-6 pt-4 pb-2 justify-center">
+    <div class="flex px-6 justify-center">
       <span
         class="font-['Maison Neue'] inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-6"
         >#LiveLaughLifeBooster</span
