@@ -7,7 +7,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "qr-scanner-pwa",
+    title: "LifeBooster Device QR Scanner",
     htmlAttrs: {
       lang: "en",
     },
