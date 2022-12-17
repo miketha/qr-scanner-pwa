@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col">
+  <div class="h-[100vh] flex flex-col justify-between">
     <head>
       <link rel="manifest" href="~/manifest.json" />
       <PWAPrompt />
@@ -34,9 +34,7 @@
       >
     </div>
 
-    <footer
-      class="flex flex-col items-start fixed bottom-0 w-full bg-[#F2F2F2]"
-    >
+    <footer class="flex flex-col items-start bg-[#F2F2F2]">
       <img
         alt="LifeBooster Inc."
         src="../static/lb-logo-dark.png"
